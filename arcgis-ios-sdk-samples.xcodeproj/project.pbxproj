@@ -112,6 +112,9 @@
 		3E8A256E1D358ECD00D14F08 /* FeatureLayerGDB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8A256D1D358ECD00D14F08 /* FeatureLayerGDB.storyboard */; };
 		3E8A256F1D358F9100D14F08 /* LosAngeles.vtpk in Resources */ = {isa = PBXBuildFile; fileRef = 3E8A256C1D358D7500D14F08 /* LosAngeles.vtpk */; };
 		3E8A25701D35A6FD00D14F08 /* FeatureLayerGDBViewController.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3E8A25671D358C2D00D14F08 /* FeatureLayerGDBViewController.swift */; };
+		3E8A257A1D35ADE900D14F08 /* MapLoadedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A25791D35ADE900D14F08 /* MapLoadedViewController.swift */; };
+		3E8A257C1D35AF1200D14F08 /* MapLoaded.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8A257B1D35AF1200D14F08 /* MapLoaded.storyboard */; };
+		3E8A257D1D35B89300D14F08 /* MapLoadedViewController.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3E8A25791D35ADE900D14F08 /* MapLoadedViewController.swift */; };
 		3EBA25401D2F104100AB0703 /* UniqueValueRenderer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBA253F1D2F104100AB0703 /* UniqueValueRenderer.storyboard */; };
 		3EBA25421D2F106600AB0703 /* UniqueValueRendererViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA25411D2F106600AB0703 /* UniqueValueRendererViewController.swift */; };
 		3EBA25431D2F1D9700AB0703 /* UniqueValueRendererViewController.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3EBA25411D2F106600AB0703 /* UniqueValueRendererViewController.swift */; };
@@ -294,6 +297,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				3E8A257D1D35B89300D14F08 /* MapLoadedViewController.swift in CopyFiles */,
 				3E8A25701D35A6FD00D14F08 /* FeatureLayerGDBViewController.swift in CopyFiles */,
 				3EEA06151D21C50E00E03774 /* SceneSymbolsViewController.swift in CopyFiles */,
 				3EEA06161D21C50E00E03774 /* DisplaySceneViewController.swift in CopyFiles */,
@@ -469,6 +473,8 @@
 		3E8A256A1D358D6400D14F08 /* LA_Trails.geodatabase */ = {isa = PBXFileReference; lastKnownFileType = file; path = LA_Trails.geodatabase; sourceTree = "<group>"; };
 		3E8A256C1D358D7500D14F08 /* LosAngeles.vtpk */ = {isa = PBXFileReference; lastKnownFileType = file; name = LosAngeles.vtpk; path = "Shared resources/Tile packages/LosAngeles.vtpk"; sourceTree = "<group>"; };
 		3E8A256D1D358ECD00D14F08 /* FeatureLayerGDB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FeatureLayerGDB.storyboard; path = "Features/Feature layer (geodatabase)/FeatureLayerGDB.storyboard"; sourceTree = "<group>"; };
+		3E8A25791D35ADE900D14F08 /* MapLoadedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapLoadedViewController.swift; path = "Maps/Map loaded/MapLoadedViewController.swift"; sourceTree = "<group>"; };
+		3E8A257B1D35AF1200D14F08 /* MapLoaded.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MapLoaded.storyboard; path = "Maps/Map loaded/MapLoaded.storyboard"; sourceTree = "<group>"; };
 		3EA34D591B38C3B3003DC0E8 /* Samples-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Samples-Bridging-Header.h"; path = "Content Display Logic/Samples-Bridging-Header.h"; sourceTree = "<group>"; };
 		3EBA253F1D2F104100AB0703 /* UniqueValueRenderer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UniqueValueRenderer.storyboard; path = "Display information/Unique value renderer/UniqueValueRenderer.storyboard"; sourceTree = "<group>"; };
 		3EBA25411D2F106600AB0703 /* UniqueValueRendererViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UniqueValueRendererViewController.swift; path = "Display information/Unique value renderer/UniqueValueRendererViewController.swift"; sourceTree = "<group>"; };
@@ -1018,6 +1024,15 @@
 			path = "Shared resources/Geodatabases";
 			sourceTree = "<group>";
 		};
+		3E8A25781D35ADC300D14F08 /* Map loaded */ = {
+			isa = PBXGroup;
+			children = (
+				3E8A25791D35ADE900D14F08 /* MapLoadedViewController.swift */,
+				3E8A257B1D35AF1200D14F08 /* MapLoaded.storyboard */,
+			);
+			name = "Map loaded";
+			sourceTree = "<group>";
+		};
 		3EBA253E1D2F101100AB0703 /* Unique value renderer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1157,6 +1172,7 @@
 			isa = PBXGroup;
 			children = (
 				3E85263B1B90DD3500690EBD /* Display a map */,
+				3E8A25781D35ADC300D14F08 /* Map loaded */,
 				3ED028381B8E3A8500ACA70D /* Open an existing map */,
 				3ED0280B1B8E3A8400ACA70D /* Change basemap */,
 				3ED0283E1B8E3A8500ACA70D /* Set initial map area */,
@@ -1728,6 +1744,7 @@
 				3E8A256F1D358F9100D14F08 /* LosAngeles.vtpk in Resources */,
 				3E4BF47F1C5BDDCA00D85919 /* san-diego-locator.lox in Resources */,
 				3ED029701B8E3ACD00ACA70D /* EditGeometry.storyboard in Resources */,
+				3E8A257C1D35AF1200D14F08 /* MapLoaded.storyboard in Resources */,
 				3E5849001B9123E900AB3CE9 /* FeatureLayerURL.storyboard in Resources */,
 				3ED028E91B8E3AA500ACA70D /* FLQuery.storyboard in Resources */,
 				3E7162351BA1F529008DE398 /* GraphicsWithSymbols.storyboard in Resources */,
@@ -1829,6 +1846,7 @@
 				3E3B2C241BBD9CD300A99C5E /* SearchEngine.swift in Sources */,
 				3ED028B01B8E3A9800ACA70D /* MILUsingURLViewController.swift in Sources */,
 				3ED0286D1B8E3A8500ACA70D /* DisplayLocationViewController.swift in Sources */,
+				3E8A257A1D35ADE900D14F08 /* MapLoadedViewController.swift in Sources */,
 				3EEA06121D21C44000E03774 /* ExtrudeGraphicsViewController.swift in Sources */,
 				3E85263D1B90DE2C00690EBD /* DisplayMapViewController.swift in Sources */,
 				3ED029681B8E3ACD00ACA70D /* EAOptionsViewController.swift in Sources */,

@@ -17,6 +17,14 @@
                 </dict>
                 <dict>
                     <key>displayName</key>
+                    <string>Map loaded</string>
+                    <key>storyboardName</key>
+                    <string>MapLoaded</string>
+                    <key>descriptionText</key>
+                    <string>This sample shows you how to tell what the map's load status is</string>
+                </dict>
+                <dict>
+                    <key>displayName</key>
                     <string>Open an existing map</string>
                     <key>storyboardName</key>
                     <string>OpenExistingMap</string>
