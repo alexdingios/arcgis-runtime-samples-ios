@@ -231,6 +231,14 @@
                 </dict>
                 <dict>
                     <key>displayName</key>
+                    <string>Feature layer (geodatabase)</string>
+                    <key>storyboardName</key>
+                    <string>FeatureLayerGDB</string>
+                    <key>descriptionText</key>
+                    <string>Show a feature layer on map from a geodatabase</string>
+                </dict>
+                <dict>
+                    <key>displayName</key>
                     <string>Service feature table (cache)</string>
                     <key>storyboardName</key>
                     <string>OnInteractionCache</string>
